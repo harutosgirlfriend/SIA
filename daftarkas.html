@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nyoba tabel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #110e0e;
+  text-align: left;
+  padding: 8px;
+
+}
+.container{
+  align-items: baseline;
+  justify-content: center;
+  width: 900px;
+}
+table{
+  height: 500px;
+}
+table tr td button{
+  border: none;
+  padding: 3px;
+  border-radius: 5px;
+}
+.update{
+  background-color: rgb(123, 209, 123);
+}
+.hapus{
+  background-color: brown;
+}
+th, td{
+  padding-bottom: 0px;
+}
+
+.kiri{
+    margin-left: 10px;
+    padding-top: 20px;
+    
+   }
+  h5{
+    font-weight: 900;
+  }
+.tulisan{
+  padding: 30px;
+        display: flex;
+    justify-content: center;
+        text-align: center;
+    }
+    table tbody tr td{
+      padding: 2px;
+    }
+    </style>
+
+</head>
+<body style="border-style: groove;  height: auto; padding: 30px; display:flex; justify-content: center;">
+  <div class="container">
+    <div class="card text-center">
+      <div class="card-header">
+        <ul class="nav nav-tabs card-header-tabs">
+          
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#">Beranda</a>
+          </li>
+          <li class="nav-item" >
+              <a class="nav-link" aria-disabled="true" href="index.html" style="color: black;">Pengelolaan Penerimaan kas</a>
+            </li>
+          <li class="nav-item" >
+            <a class="nav-link active" aria-current="true" href="pengelolaankeluar.html">Pengelolaan Pengeluaran kas</a>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+    <div class="tulisan">
+      <div class="kanan">
+          <img src="oxfordd.png" alt="" width="100px">
+      </div>
+      <div class="kiri">
+          <h5>DATA PENGELUARAN KAS</h5>
+          <h6>OXFORD ELEMENTARY</h6>
+          <h6>Britania Raya</h6>
+          
+          
+      </div>
+     
+        </div>
+
+    <table class="table table-success table-striped">
+        <thead>
+          <tr style="background-color: rgba(112, 128, 144, 0.36);">
+            <th scope="col">Tgl</th>
+            <th scope="col">No Transaksi</th>
+            <th scope="col">Nama</th>
+            <th scope="col">Ket</th>
+            <th scope="col">Nominal</th>
+            <th scope="col">Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01/01/2024</td>
+            
+            <td>P221</td>
+            <td>Haechan</td>
+            <td>Pembayaran Gaji guru</td>
+            <td>1.500.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+        
+          <tr>
+            <td>02/01/2024</td>
+            <td>H331</td>
+            <td>Jisung</td>
+            <td>Pembayaran honor pelatih pramuka</td>
+            <td>1.500.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+          
+          <tr>
+            <td>03/01/2024</td>
+            <td></td>
+            <td>Jeno</td>
+            <td>Pembayaran Gaji guru</td>
+            <td>1.500.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+          <tr>
+            <td>03/01/2024</td>
+            <td></td>
+            <td>Chenle</td>
+            <td>Pembayaran Gaji guru</td>
+            <td>1.500.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+          <tr>
+            <td>04/01/2024</td>
+            <td></td>
+            <td>Renjun</td>
+            <td>Pembelian Perlengkapan</td>
+            <td>1.500.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+          <tr>
+            <td>04/01/2024</td>
+            <td></td>
+            <td>Jhonny</td>
+            <td>Pembayaran Listrik</td>
+            <td>1.200.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+          <tr>
+            <td>05/01/2024</td>
+            <td>H332</td>
+            <td>Doyoung</td>
+            <td>Pembayaran honor Petugas Keamanan</td>
+            <td>200.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+          <tr>
+            <td>05/01/2024</td>
+            <td>H333</td>
+            <td>Taeil</td>
+            <td>Pembayaran honor Petugas Keamanan</td>
+            <td>500.000</td>
+            <td><button class="update">update</button>
+            <button class="hapus">hapus</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <br>
+      <div class="" style="text-align: right;">
+        <a href="laporanpengeluarankas.html"><button style="padding: 5px; border: none; border-radius: 5px; background-color: yellow; margin-top: 0px;">cetak laporan</button></a>
+      </div>
+      </div>
+<br>
+<script src="<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />"></script>
+   
+</body>
+</html>

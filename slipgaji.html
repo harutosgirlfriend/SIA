@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        table {
+          font-family: arial, sans-serif;
+          border-collapse: collapse;
+          width: 100%;
+        }
+        .h1{
+            font-family: monospace;
+        }
+        
+        td, th {
+          
+          text-align: left;
+          padding: 8px;
+        }
+        tr:nth-child(even) {background-color: #f2f2f2;}
+        .kiri{
+    margin-left: 10px;
+    padding-top: 10px;
+   
+    
+   }
+  h5{
+    font-weight: 900;
+    
+  }
+  .container{
+          width: 100vh;
+          border: 1px solid grey;
+          padding: 10px;
+        }
+.tulisan .kiri h5 h6{
+    padding: 0px;
+}
+.tulisan{
+    height: 80px;
+    width: 100vh;
+  padding: 10px;
+  padding-left: 0px;
+    display: flex;
+    justify-content: center;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+   
+    h2, p{
+        margin: 0px;
+        padding: 5px;
+    }
+    table thead tr td input{
+        margin-left: 20px;
+        border-radius: 5px;
+    }
+    button{
+        border: none;
+        border-radius: 5px;
+        padding: 8px;
+        background-color: rgb(215, 221, 250);
+    }
+</style>
+<body style="border-style: groove; width: 100vh; margin-left: 400px; height: auto; padding: 30px; padding-top: 0px;">
+    <div class="tulisan">
+        <div class="kanan">
+            <img src="oxfordd.png" alt="" width="100px">
+        </div>
+        <div class="kiri">
+            <h2>INPUT HONOR</h2>
+            <p>OXFORD ELEMENTARY</p>
+            <p>Britania Raya</p>
+            
+            
+        </div>
+        
+          </div>
+          <p>No:</p>
+<hr>
+    <table class="table">
+        <thead>
+            
+                
+            <td colspan="2"><b>Nama     </b><input type="text" style="margin-left: 70px;"></td>
+            <td><b>Gaji Pokok   </b><input type="text" style="margin-left: 70px;"></td>
+            <tr>
+                <td colspan="2"><b>Id Karyawan  </b><input type="text"></td>
+                <td><b>Tunjangan Pokok </b><input type="text"  style="margin-left: px; "></td>
+                </tr>
+            <tr>
+            <td colspan="2"><b>Jabatan </b><input type="text"  style="margin-left: 55px;"></td>
+            <td><b>Tunjangan Istri </b><input type="text" style="margin-left: 40px;" ></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><b>Tunjangan Anak </b><input type="text" style="margin-left: 30px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><b>Potongan </b><input type="text" style="margin-left: 80px;"></td>
+            </tr>
+            <tr>
+                <td colspan="2"></td>
+                <td><b>Total Honor </b><input type="text" style="margin-left: 65px;"></td>
+            </tr>
+           
+        </thead>
+        
+    </table>
+    <br>
+    <button>cetak kwitansi</button>
+</body>
+</html>
